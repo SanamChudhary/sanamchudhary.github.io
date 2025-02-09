@@ -1,28 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.b6a3968c.css",
-    "main.js": "/static/js/main.d76cf740.js",
-    "static/media/hero-image.png": "/static/media/hero-image.ceabd36a98c0bf3685ca.png",
+    "main.css": "/static/css/main.aa25e493.css",
+    "main.js": "/static/js/main.2fd959d4.js",
+    "static/media/hero-image.png": "/static/media/hero-image.19da29710cb5ef794e2d.png",
     "static/media/tic-tak-toc.jpg": "/static/media/tic-tak-toc.f8c25ecf4ccc36d2821c.jpg",
     "static/media/simon-says-image.jpg": "/static/media/simon-says-image.e87dff138ca182b25f7d.jpg",
     "static/media/project-image.png": "/static/media/project-image.4a6a0f2d0fd52c748321.png",
     "static/media/sanam-logo.png": "/static/media/sanam-logo.6de864acc7c772f712b3.png",
     "static/media/mysql-icon.svg": "/static/media/mysql-icon.68c8655ee4a0bef4ec99192c22346b09.svg",
-    "static/media/java-icon.svg": "/static/media/java-icon.a351f739f47fda7a637b86ffa530d56a.svg",
     "static/media/express-icon.svg": "/static/media/express-icon.d91c10260d4508bc68149fc0bf48c1c0.svg",
     "static/media/react-icon.svg": "/static/media/react-icon.e68b35f4774979ae220b1d5d7b345b00.svg",
-    "static/media/github-icon.svg": "/static/media/github-icon.895050b20cdc3aefa3177ef8508b789b.svg",
     "static/media/nodejs-icon.svg": "/static/media/nodejs-icon.502737ea1f44b9be4170cafd2bace4e7.svg",
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.3beac5ba18197ccbdea6e2f53e18edcf.svg",
     "index.html": "/index.html",
     "static/media/css-icon.svg": "/static/media/css-icon.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/javascript-icon.svg": "/static/media/javascript-icon.b879f838faf1cb951d1c2230fd933a39.svg",
-    "main.b6a3968c.css.map": "/static/css/main.b6a3968c.css.map",
-    "main.d76cf740.js.map": "/static/js/main.d76cf740.js.map"
+    "main.aa25e493.css.map": "/static/css/main.aa25e493.css.map",
+    "main.2fd959d4.js.map": "/static/js/main.2fd959d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6a3968c.css",
-    "static/js/main.d76cf740.js"
+    "static/css/main.aa25e493.css",
+    "static/js/main.2fd959d4.js"
   ]
 }
