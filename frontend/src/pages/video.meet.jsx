@@ -12,8 +12,10 @@ import {
   Chat,
 } from "@mui/icons-material";
 import "../styles/video.meet.css";
+import server from "../environment";
 
-const server_url = "http://localhost:8000";
+const server_url = server;
+
 const peerConfigConnections = {
   iceServers: [{ urls: "stun:stun.l.google.com:19302" }],
 };

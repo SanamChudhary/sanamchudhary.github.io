@@ -3,11 +3,12 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import PropTypes from "prop-types";
 import httpStatus from "http-status";
+import server from "../environment";
 
 const AuthContext = createContext({});
 
 const client = axios.create({
-  baseURL: "http://localhost:8000/api/v1/users",
+  baseURL: `${server}/api/v1/users`,
 });
 
 export const AuthProvider = ({ children }) => {
