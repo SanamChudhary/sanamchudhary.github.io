@@ -1,0 +1,61 @@
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Home Button */
+.home-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s;
+}
+.home-button:hover {
+  color: #007bff;
+}
+
+/* Meeting Cards */
+.meeting-card {
+  background: #ffffff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border-left: 5px solid #007bff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.meeting-card:hover {
+  transform: scale(1.02);
+}
+.meeting-code {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.meeting-date {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Snackbar */
+.snackbar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff4d4d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+}
+.snackbar.show {
+  display: block;
+}

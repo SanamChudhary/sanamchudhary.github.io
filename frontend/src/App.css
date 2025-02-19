@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+.landing-page-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1c1c1e;
+  color: white;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  padding: 1.4rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0078ff;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-list p {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.nav-list p:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Container */
+.landing-main-container {
+  display: flex;
+  padding: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.landing-main-container h1 {
+  font-size: 2.5rem;
+  max-width: 500px;
+}
+
+.landing-main-container p {
+  margin-bottom: 1.6rem;
+  opacity: 0.8;
+}
+
+.landing-main-container div[role="button"] a {
+  background: #0078ff;
+  text-decoration: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  transition: background 0.3s ease-in-out;
+}
+
+.landing-main-container div[role="button"] a:hover {
+  background: #005bbf;
+}
+
+.landing-main-container img {
+  height: 70vh;
+  width: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .landing-main-container {
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .landing-main-container .left-section {
+    margin-bottom: 2rem;
+  }
+
+  .landing-main-container img {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-page-container nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: flex;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hamburger:hover {
+    transform: scale(1.1);
+  }
+
+  /* Animated Dropdown Menu */
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    padding: 20px;
+    transform: translateX(100%);
+    border: 2px solid black;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .nav-list.open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav-list p {
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .nav-list p:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-list div[role="button"] p {
+    background: #0078ff;
+    border-radius: 8px;
+    margin: 0.2rem 1.5rem;
+    padding: 10px;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .nav-list div[role="button"] p:hover {
+    background: #005bbf;
+  }
+
+  /* Main Container Adjustments */
+  .landing-main-container {
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 140px;
+  }
+
+  .landing-main-container img {
+    height: 50vh;
+    max-width: 90%;
+    object-fit: contain;
+    margin-bottom: 60px ;
+  }
+
+  .landing-main-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-main-container h1 {
+    font-size: 2rem;
+  }
+
+  .landing-main-container img {
+    height: 40vh;
+  }
+
+  .nav-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .nav-list {
+    gap: 1rem;
+  }
+}
