@@ -13,6 +13,7 @@ import {
 } from "@mui/icons-material";
 import "../styles/video.meet.css";
 import server from "../environment";
+import { useNavigate } from "react-router-dom";
 
 const server_url = server;
 
@@ -24,6 +25,8 @@ export default function VideoMeetComponent() {
   const socketRef = useRef();
   const socketIdRef = useRef();
   const localVideoRef = useRef();
+  
+  const navigate = useNavigate();
 
   const [videoAvailable, setVideoAvailable] = useState(true);
   const [audioAvailable, setAudioAvailable] = useState(true);
@@ -488,8 +491,8 @@ export default function VideoMeetComponent() {
     } catch (e) {
       console.error(e);
     }
-    window.location.href = "/home";
-  }, []);
+    navigate("/home");
+  }, [navigate]);
 
   const openChat = useCallback(() => {
     setIsChatVisible((prev) => !prev);
